@@ -4,14 +4,6 @@ Trabalho da 2ª avaliação de Programação Web (UESPI). A aplicação consulta
 federais em exercício na API de Dados Abertos da Câmara, mostra os gastos de cada um com a
 cota parlamentar e guarda uma lista de deputados acompanhados pelo usuário.
 
-O backend está pronto. O frontend ainda está em desenvolvimento.
-
-## Integrantes
-
-- Enzo Rios (eznoP)
-
-> Se a equipe tiver um segundo integrante, adicionar o nome aqui.
-
 ## Funcionalidades
 
 - Listagem de deputados com filtro por UF, partido e nome, com paginação.
@@ -26,7 +18,7 @@ O backend está pronto. O frontend ainda está em desenvolvimento.
 - **Base:** `https://dadosabertos.camara.leg.br/api/v2`
 - **Documentação:** https://dadosabertos.camara.leg.br/swagger/api.html
 
-Endpoints usados pelo backend:
+Endpoints usados pelo backend
 
 | Método | Endpoint | Para quê |
 | --- | --- | --- |
