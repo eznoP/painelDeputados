@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "db:reset": "rm -f data/app.db"
   },
   "dependencies": {
     "better-sqlite3": "^13.2.0",
