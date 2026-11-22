@@ -46,7 +46,7 @@ export default function DeputyDetail({
       )}
 
       {!loading && deputy && (
-        <article className="deputy-detail">
+        <article>
           <header className="detail-header">
             <img
               className="detail-photo"
