@@ -563,3 +563,99 @@ p {
   flex-wrap: wrap;
   gap: var(--space-2);
 }
+
+/* estiliza botoes, mensagens e estados */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  min-height: 2.5rem;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-small);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, opacity 0.2s ease;
+}
+
+.button:disabled {
+  opacity: 0.6;
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.button-primary:hover:not(:disabled) {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.button-secondary {
+  background-color: #ffffff;
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.button-secondary:hover:not(:disabled) {
+  background-color: #f1f5f9;
+}
+
+.button-danger {
+  background-color: #ffffff;
+  border-color: #f0c0c0;
+  color: var(--color-danger);
+}
+
+.button-danger:hover:not(:disabled) {
+  background-color: #fef2f2;
+  border-color: var(--color-danger);
+}
+
+.deputy-actions .button {
+  min-height: 2.25rem;
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.85rem;
+}
+
+.pagination .button {
+  min-width: 6rem;
+}
+
+.message {
+  padding: var(--space-3);
+  border: 1px solid transparent;
+  border-radius: var(--radius-small);
+  font-size: 0.95rem;
+}
+
+.message-error {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+  color: #991b1b;
+}
+
+.status-message {
+  padding: var(--space-3);
+  background-color: #f8fafc;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.empty-state {
+  padding: var(--space-5);
+  background-color: #f8fafc;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-small);
+  color: var(--color-text-muted);
+  text-align: center;
+}
