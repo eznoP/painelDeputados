@@ -151,6 +151,11 @@ p {
 
 .watchlist-section {
   grid-column: 1 / -1;
+  padding: var(--space-5);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-small);
 }
 
 /* estiliza o cabecalho principal */
@@ -455,4 +460,106 @@ p {
 
 .expenses-table tbody tr:hover {
   background-color: #f8fafc;
+}
+
+/* estiliza a lista de deputados acompanhados */
+.watchlist-section h2 {
+  margin-bottom: var(--space-4);
+}
+
+.watchlist-wrapper {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.watchlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: var(--space-3);
+}
+
+.watchlist-item {
+  display: grid;
+  gap: var(--space-2);
+  align-content: start;
+  padding: var(--space-4);
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+}
+
+.watchlist-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.link-button {
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-align: left;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.watchlist-party {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.watchlist-note {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.watchlist-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+.note-editor {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.note-editor label {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.note-editor textarea {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  resize: vertical;
+}
+
+.note-editor textarea:focus-visible {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.16);
+}
+
+.note-counter {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: right;
+}
+
+.note-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
 }
