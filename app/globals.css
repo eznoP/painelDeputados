@@ -1,0 +1,154 @@
+/* variaveis de cor, espaco e tipografia */
+:root {
+  --color-background: #f3f5f8;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-text-muted: #5b6573;
+  --color-primary: #1d4ed8;
+  --color-primary-dark: #1e40af;
+  --color-border: #d5dbe3;
+  --color-danger: #b91c1c;
+  --color-success: #15803d;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  --radius-small: 6px;
+  --radius-medium: 10px;
+  --shadow-small: 0 1px 2px rgba(15, 23, 42, 0.08);
+  --shadow-medium: 0 8px 24px rgba(15, 23, 42, 0.1);
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+}
+
+/* reinicia margens e padroes do navegador */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* define a hierarquia de titulos e textos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+h2 {
+  font-size: 1.35rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.05rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+}
+
+p {
+  color: var(--color-text-muted);
+}
+
+/* organiza o conteudo principal da pagina */
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+}
+
+.page-main {
+  display: grid;
+  flex: 1;
+  gap: var(--space-6);
+  padding-block: var(--space-6);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.watchlist-section {
+  grid-column: 1 / -1;
+}
