@@ -659,3 +659,16 @@ p {
   color: var(--color-text-muted);
   text-align: center;
 }
+
+/* estiliza o rodape da pagina */
+.site-footer {
+  padding-block: var(--space-4);
+  background-color: #12306b;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.site-footer p {
+  color: inherit;
+}
