@@ -152,3 +152,21 @@ p {
 .watchlist-section {
   grid-column: 1 / -1;
 }
+
+/* estiliza o cabecalho principal */
+.site-header {
+  background: linear-gradient(135deg, #12306b, var(--color-primary));
+  color: #ffffff;
+  padding-block: var(--space-6);
+  box-shadow: var(--shadow-small);
+}
+
+.site-header h1 {
+  color: #ffffff;
+}
+
+.site-header p {
+  max-width: 60ch;
+  margin-top: var(--space-2);
+  color: rgba(255, 255, 255, 0.82);
+}
