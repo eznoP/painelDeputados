@@ -322,3 +322,137 @@ p {
   font-size: 0.9rem;
   color: var(--color-text-muted);
 }
+
+/* estiliza o detalhe do deputado e as despesas */
+.detail-section {
+  padding: var(--space-5);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-small);
+}
+
+.detail-section h2 {
+  margin-bottom: var(--space-4);
+}
+
+.deputy-detail-wrapper {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.detail-header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.detail-photo {
+  width: 6rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: var(--radius-small);
+  background-color: #e8edf3;
+}
+
+.detail-info {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.detail-party {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.detail-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-5);
+  margin-block: var(--space-1);
+}
+
+.detail-facts div {
+  display: grid;
+  gap: 2px;
+}
+
+.detail-facts dt {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.detail-facts dd {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.detail-info .button {
+  justify-self: start;
+  margin-top: var(--space-1);
+}
+
+.expenses {
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.expenses-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.expenses-total {
+  padding: var(--space-3);
+  background-color: #eef3fd;
+  border-radius: var(--radius-small);
+  color: var(--color-text);
+}
+
+.expenses-total strong {
+  color: var(--color-primary-dark);
+}
+
+.expenses h5 {
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+/* organiza a tabela de despesas */
+.expenses-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.expenses-table th,
+.expenses-table td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.expenses-table th {
+  background-color: #f8fafc;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.expenses-table th:last-child,
+.expenses-table td:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.expenses-table tbody tr:hover {
+  background-color: #f8fafc;
+}
