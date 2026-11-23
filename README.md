@@ -1,5 +1,7 @@
 # Painel de Deputados Federais
 
+Membros: Antônio Lucas de Oliveira Neto e Enzo Rios Veras Ost Lopes
+
 Trabalho da 2ª avaliação de Programação Web (UESPI). A aplicação consulta os deputados
 federais em exercício na API de Dados Abertos da Câmara, mostra os gastos de cada um com a
 cota parlamentar e guarda uma lista de deputados acompanhados pelo usuário.
